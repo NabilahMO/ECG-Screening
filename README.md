@@ -1,8 +1,8 @@
 
 # ECG Arrhythmia Classification using Machine Learning
 
-## Project Goal
-Build a machine learning model capable of **classifying individual heartbeats** from ECG signals into **Normal (N)** or one of several **AAMI-defined arrhythmia classes (F, Q, S, V)** using extracted waveform features.
+## Project Description
+This project utilises a machine learning model capable of classifying individual heartbeats from ECG signals into **Normal (N)** or one of several AAMI-defined arrhythmia classes **(F, Q, S, V)** using extracted waveform features.
 
 ## Dataset
 - **Source**: Pre-processed ECG beat segments.
@@ -33,7 +33,7 @@ label_mapping = {
     'A': 'S', 'a': 'S', 'J': 'S', 'S': 'S',
     'V': 'V', 'E': 'V',
     'F': 'F',
-    'Q': 'Q'
+    '/': 'Q', 'f': 'Q', 'Q': 'Q', '?': 'Q'
 }
 ```
 
@@ -46,8 +46,6 @@ label_mapping = {
   - Accuracy: **98%**
   - Precision/Recall (macro avg): **0.96 / 0.86**
 - Visuals: Confusion matrix and feature importance chart
-![Confusion Matrix](./confusion_matrix.png)
-![Feature Importance](./feature_importance.png)
 
 ### 6. Top Features
 - `rr_prev`
