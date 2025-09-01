@@ -1,6 +1,6 @@
 # **ECG Heartbeat Classification Using Machine Learning** (Scikit-Learn)
 
-This project utilises the Random Forest Classifier - a machine learning model capable of classifying individual heartbeats from ECG signals into either normal, supraventricular ectopic, ventricular ectopic or fusion beats. 
+This project utilises the Random Forest Classifier (a machine learning model) to classify individual heartbeats from ECG signals into either normal, supraventricular ectopic, ventricular ectopic or fusion beats. 
 
 Pipeline:
 
