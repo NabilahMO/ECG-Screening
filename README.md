@@ -16,9 +16,8 @@ Pipeline:
 2. **Model Training and Evaluation:**
 - The `ecg_data_prep` script creates the feature matrix `X` and target vector `y`, then splits them into `X_train`, `X_test`, `y_train`, and `y_test`.
 - The `RandomForestClassifier` is trained to handle the imbalance of the heartbeat classes:
-        1. `stratify=y`: Uses a stratified train-test split to ensure that the class distribution in the training and testing sets is representative of the overall dataset.
-        2. `class_weight='balanced'`: This instructs the Random Forest algorithm to pay more attention to the minority classes during training, preventing it from simply ignoring                them in favour of the overwhelmingly common 'Normal' class.
+-         `stratify=y`: Uses a stratified train-test split to ensure that the class distribution in the training and testing sets is representative of the overall dataset.
+-         `class_weight='balanced'`: This instructs the Random Forest algorithm to pay more attention to the minority classes during training, preventing it from simply ignoring                them in favour of the overwhelmingly common 'Normal' class.
 - The  `classification_report` and `ConfusionMatrixDisplay` is used to evaluate its performance with metrics like accuracy, precision, recall, and the F1-score, and create a confusion matrix to visualise which types of heartbeats it struggles with.
-- The  `classification_report` and `ConfusionMatrixDisplay` is used to evaluate its performance with metrics such as accuracy, precision, recall, and the F1-score, and create a confusion matrix to visualise which types of heartbeats it struggles with.
 
 Built by Nabilah Muri-Okunola
